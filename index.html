@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Administrador de Tareas</title>
+  </head>
+  <body>
+    <main>
+      <div id="theme-toggle">
+        <button id="toggle-theme-btn">
+          <img
+            id="img-btn"
+            src="./styles/icons/light_mode.svg"
+            alt="light mode icon"
+          />
+        </button>
+      </div>
+
+      <div id="task-manager">
+        <h1>Administrador de Tareas</h1>
+        <form id="task-form">
+          <input
+            type="text"
+            id="task-input"
+            placeholder="Ingrese una nueva tarea"
+            required
+          />
+          <button type="submit">
+            <img src="./styles/icons/add.svg" alt="add icon" />
+          </button>
+          <button type="button" id="delete-all-btn">
+            <img src="./styles/icons/delete_all.svg" alt="delete all icon" />
+          </button>
+        </form>
+
+        <ul id="task-list"></ul>
+      </div>
+    </main>
+    <footer>
+      Desarrollado por <span>Alirio Isea</span> en el
+      <span>Curso de JavaScript: Manipulación del DOM</span> de
+      <a href="https://platzi.com/cursos/document-object-model/">Platzi</a>
+    </footer>
+
+    <script src="./src/app.js"></script>
+  </body>
+</html>
